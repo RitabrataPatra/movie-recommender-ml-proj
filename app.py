@@ -4,7 +4,7 @@ import pickle
 
 movies_list = pickle.load(open('movies.pkl', 'rb'))
 similarity = pickle.load(open('similarity.pkl' , 'rb'))
-print(movies_list)
+
 
 def recommend(movie):
     movie_index = movies_list[movies_list['title'] == movie].index[0]
