@@ -1,6 +1,7 @@
 import streamlit as st
 import  pandas as pd
 import pickle
+
 movies_list = pickle.load(open('movies.pkl', 'rb'))
 similarity = pickle.load(open('similarity.pkl' , 'rb'))
 print(movies_list)
